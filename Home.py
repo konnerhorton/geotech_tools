@@ -2,6 +2,7 @@ import streamlit as st
 from utilities.plots import *
 import pandas as pd
 import math
+import os
 
 st.set_page_config(page_title="Mohr", layout="wide")
 
@@ -24,7 +25,8 @@ with st.sidebar:
     if data is not None:
         df = pd.read_csv(data)
     else:
-        df = pd.read_csv("data\test.csv")
+        path = os.getcwd()
+        df = pd.read_csv(os.path.join(path, "data", "test.csv"))
 
     sample_to_plot = st.selectbox("Select Sample to Plot", df["Sample ID"].unique())
 
