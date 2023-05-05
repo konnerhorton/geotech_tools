@@ -40,7 +40,7 @@ if "Results" not in st.session_state:
 col1, col2 = st.columns(2)
 
 with col1:
-    cohesion_sample = st.slider("Pick a Cohesion Value", 0, 200, 1, key=0)
+    cohesion_sample = st.slider("Pick a Cohesion Value", -100, 200, 1, key=0)
     friction_angle_sample = st.slider("Pick a Friction Angle", 20, 60, 1, key=1)
     with st.form("Slecter"):
         submitted = st.form_submit_button("Record C and Phi")
