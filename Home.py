@@ -12,6 +12,8 @@ st.markdown(
 
      |Sample ID|Test Number|Minor Principal Stress|Major Principal Stress|
 
+     - You can optionally use the pre-loaded data to test out the tool.
+
 2. Select a sample to plot from the menu below the file download button.
 3. Use the sliders below to select an appropriate cohesion $$C$$ and friction angle $$\phi$$.
 4. When you have made your selection, click the 'Record C and Phi' button to write the selections to a new table.
